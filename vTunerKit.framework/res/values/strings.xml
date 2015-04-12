@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="app_name">vTuner</string>
+    
+    <!-- status bar notification -->
+	<string name="playing_status_message_string">Playing Radio Station</string>
+	<string name="playing_status_bar_message_string">vTuner (Playing)</string>
+	<string name="paused_status_message_string">Paused Radio Station</string>
+	<string name="paused_status_bar_message_string">vTuner (Paused)</string>
+	<string name="buffering_status_message_string">Buffering Radio Station…</string>
+	<string name="buffering_status_bar_message_string">vTuner is buffering…</string>
+</resources>

@@ -1,0 +1,34 @@
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	
+    
+</LinearLayout> -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent" >  
+    
+    <include 
+        android:id="@+id/player_summary"
+        android:layout_width="fill_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/player_summary" />
+    
+    <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+        	    android:id="@+id/content_list"
+        	    android:layout_width="match_parent"
+        	    android:layout_height="match_parent"
+        	    android:background="@null"
+        	    android:scrollingCache="false"
+
+        	    android:layout_above="@id/player_summary"/>  
+   
+    
+    
+    
+</RelativeLayout>

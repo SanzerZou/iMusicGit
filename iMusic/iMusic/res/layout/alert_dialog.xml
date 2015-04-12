@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="271dip"
+    android:layout_height="wrap_content" 
+    >
+    <TextView 
+        style = "TextLarge"
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dip"
+        android:gravity="center"
+        android:textColor="#000000"/>
+    <TextView
+        style = "TextSmall"
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:gravity="center"
+        android:textColor="#000000"/>
+    <EditText
+        android:id="@+id/edit_text" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="30dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:padding="5dip"
+        android:background="@drawable/corner_shape_small"/>
+    <View 
+        android:id="@+id/line_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="15dip"
+        android:layout_below="@+id/edit_text"
+        android:background="#d2d2d2"/>
+    <Button 
+        android:id="@+id/cancel"
+        android:layout_width="135dip"
+        android:layout_height="50dip"
+        android:layout_below="@+id/line_horizontal"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:background="@null"
+        android:text="@string/cancel"
+        android:textColor="#1f73ec"/>
+    <View 
+        android:id="@+id/line_vertical"
+        android:layout_width="1dip"
+        android:layout_height="50dip"
+        android:layout_below="@+id/line_horizontal"
+        android:layout_toRightOf="@+id/cancel"
+        android:background="#d2d2d2"/>
+    
+    <Button 
+        android:id="@+id/ok"
+        android:layout_width="135dip"
+        android:layout_height="50dip"
+        android:layout_below="@+id/line_horizontal"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:background="@null"
+        android:text="@string/ok"
+        android:textColor="#1f73ec"/>
+</RelativeLayout>
